@@ -1,23 +1,19 @@
 package core.launcher;
 
-import core.controllers.Controller;
 import core.controllers.WindowBasicsFunction;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.layout.HBox;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class BlueTable extends Application {
+public class BlueTable extends Application{
 
     public static Stage primaryStage;
-    public static Controller mainController;
 
     public static void main(String[] args) {
         launch(args);
@@ -30,7 +26,6 @@ public class BlueTable extends Application {
 
         //Setting statics
         BlueTable.primaryStage = primaryStage;
-        BlueTable.mainController = load.getController();
 
         primaryStage.setTitle("Eln BlueTable");
         primaryStage.initStyle(StageStyle.UNDECORATED);

@@ -33,8 +33,9 @@ public class WindowBasicsFunction {
         primaryStage.setHeight(1080);
         primaryStage.setMaximized(true);
     }
+
     public static void setWindowsToolBoxFunctions() {
-        toolBox = (HBox) BlueTable.mainController.toolBox.getChildren().filtered(node -> node instanceof HBox).get(0);
+        toolBox = (HBox) MainController.MAIN_CONTROLLER.toolBox.getChildren().filtered(node -> node instanceof HBox).get(0);
 
         toolBox.getChildren().get(0).addEventHandler(MouseEvent.MOUSE_CLICKED, handle -> {
             BlueTable.primaryStage.setIconified(true);
@@ -51,6 +52,8 @@ public class WindowBasicsFunction {
 
         toolBox.getChildren().get(2).addEventHandler(MouseEvent.MOUSE_CLICKED, handle -> BlueTable.primaryStage.close());
     }
+
+
 
     @Deprecated
     public static void addResizeListener(Stage stage) {

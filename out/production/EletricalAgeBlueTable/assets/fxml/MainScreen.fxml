@@ -14,9 +14,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.controllers.Controller">
+<VBox prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.controllers.MainController">
    <children>
-      <AnchorPane fx:id="toolBox" stylesheets="@../styles/menuToolBar.css">
+         <AnchorPane fx:id="toolBox" stylesheets="@../styles/menuToolBar.css">
          <children>
             <MenuBar fx:id="mainMenuBar">
             <menus>
@@ -71,16 +71,14 @@
        <SplitPane dividerPositions="0.10218978102189781, 0.843065693430657">
            <AnchorPane prefHeight="1053.0" prefWidth="367.0" style="-fx-background-color: background;">
                <children>
-                   <Label alignment="CENTER" layoutX="50.0" layoutY="27.0" minWidth="60.0" prefHeight="45.0"
-                          prefWidth="88.0" style="-fx-background-color: backgroundSuperLight;" text="Tools"
-                          textAlignment="CENTER" wrapText="false"/>
-                   <MaterialIconView layoutX="65.0" layoutY="55.0"/>
+                   <Label alignment="CENTER" layoutX="50.0" layoutY="27.0" minWidth="60.0" prefHeight="45.0" prefWidth="88.0" style="-fx-background-color: backgroundSuperLight;" text="Tools" textAlignment="CENTER" wrapText="false" />
+                   <MaterialIconView layoutX="65.0" layoutY="55.0" />
                </children>
            </AnchorPane>
-           <fx:include source="worktable.fxml"/>
-           <fx:include fx:id="simViewer" minWidth="300.0" source="simView.fxml" AnchorPane.rightAnchor="0.0"/>
+           <fx:include fx:id="worktable" source="bluetable/worktable.fxml" />
+           <fx:include fx:id="simViewer" minWidth="300.0" source="simView.fxml" AnchorPane.rightAnchor="0.0" />
        </SplitPane>
-      <SplitPane dividerPositions="0.5" minHeight="20.0">
+        <SplitPane dividerPositions="0.5" minHeight="20.0">
         <items>
           <AnchorPane style="-fx-background-color: backgroundDark;" />
           <AnchorPane style="-fx-background-color: backgroundDark;" />
