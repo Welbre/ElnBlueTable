@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TestArt">
+    <output-path>$PROJECT_DIR$/out/artifacts/TestArt</output-path>
+    <root id="archive" name="EletricalAgeBlueTable.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/test/resorces/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/lib/javafx-sdk-19/bin" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-sdk-19/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-sdk-19/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-sdk-19/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-sdk-19/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-sdk-19/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-sdk-19/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-sdk-19/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-sdk-19/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="module-test-output" name="EletricalAgeBlueTable" />
+      <element id="module-output" name="EletricalAgeBlueTable" />
+    </root>
+  </artifact>
+</component>
