@@ -55,11 +55,11 @@ public class WindowBasicsFunction {
 
 
     @Deprecated
-    public static void addResizeListener(Stage stage) {
-        addResizeListener(stage, 1, 1, Double.MAX_VALUE, Double.MAX_VALUE);
+    public static void addResizeListener(Stage stage, Parent parent) {
+        addResizeListener(stage, parent, 1, 1, Double.MAX_VALUE, Double.MAX_VALUE);
     }
 
-    public static void addResizeListener(Stage stage, double minWidth, double minHeight, double maxWidth, double maxHeight) {
+    public static void addResizeListener(Stage stage, Parent parent, double minWidth, double minHeight, double maxWidth, double maxHeight) {
         ResizeListener resizeListener = new ResizeListener(stage, minWidth, maxWidth, minHeight, maxHeight);
         stage.getScene().addEventHandler(MouseEvent.MOUSE_MOVED, resizeListener);
         stage.getScene().addEventHandler(MouseEvent.MOUSE_PRESSED, resizeListener);
@@ -67,8 +67,7 @@ public class WindowBasicsFunction {
         stage.getScene().addEventHandler(MouseEvent.MOUSE_EXITED, resizeListener);
         stage.getScene().addEventHandler(MouseEvent.MOUSE_EXITED_TARGET, resizeListener);
 
-        ObservableList<Node> children = stage.getScene().getRoot().getChildrenUnmodifiable();
-        for (Node child : children) {
+        for (Node child : parent.getChildrenUnmodifiable()) {
             addListenerDeeply(child, resizeListener);
         }
     }

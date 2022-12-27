@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Circle?>
 
-<ScrollPane fx:id="pane" hbarPolicy="NEVER" hmax="2500.0" stylesheets="@../../styles/menuColor.css" vbarPolicy="NEVER" vmax="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kuse.bluetable.Controller">
-   <content>
-      <AnchorPane fx:id="anchor" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed" onScroll="#onScroll" prefHeight="1080.0" prefWidth="2500.0" style="-fx-background-color: backgroundSuperLight; -fx-background-image: url(assets/image/blueprint.png);">
+
+<Pane fx:id="scrollPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: background;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kuse.bluetable.Controller">
+   <children>
+      <AnchorPane fx:id="pane" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed" prefHeight="1400.0" prefWidth="1920.0" style="-fx-background-image: url(&quot;/assets/image/blueprint.png&quot;);">
          <children>
-            <Circle fill="WHITE" layoutX="585.0" layoutY="440.0" radius="300.0" stroke="BLACK" strokeType="INSIDE" />
-         </children></AnchorPane>
-   </content>
-</ScrollPane>
+            <Circle fill="DODGERBLUE" layoutX="116.0" layoutY="517.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #666600;" />
+            <Circle fill="DODGERBLUE" layoutX="1944.0" layoutY="572.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

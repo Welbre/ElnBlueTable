@@ -1,5 +1,6 @@
 package kuse.core.launcher;
 
+import kuse.core.controllers.MainController;
 import kuse.core.controllers.WindowBasicsFunction;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -36,7 +37,7 @@ public class BlueTable extends Application{
 
         //initFunctions
         WindowBasicsFunction.setWindowsToolBoxFunctions();
-        WindowBasicsFunction.addResizeListener(primaryStage,640,360,1920,1080);
+        WindowBasicsFunction.addResizeListener(primaryStage, MainController.MAIN_CONTROLLER.toolBox,640,360,1920,1080);
 
         primaryStage.show();
     }

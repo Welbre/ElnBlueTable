@@ -11,7 +11,16 @@
       <root url="jar://$PROJECT_DIR$/lib/javafx-sdk-19/lib/javafx.web.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/doc" />
+      <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/doc/javafx.base" />
+      <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/doc/javafx.controls" />
+      <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/doc/javafx.fxml" />
+      <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/doc/javafx.graphics" />
+      <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/doc/javafx.media" />
+      <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/doc/javafx.swing" />
+      <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/doc/javafx.web" />
+      <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/doc/legal" />
+      <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/doc/resources" />
+      <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/doc/script-dir" />
     </JAVADOC>
     <NATIVE>
       <root url="file://$PROJECT_DIR$/lib/javafx-sdk-19/bin" />

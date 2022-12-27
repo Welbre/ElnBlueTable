@@ -2,88 +2,42 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="TestArt" />
+      <artifact name="EletricalAgeBlueTable:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcfc8648-f1eb-4f51-a4df-32c233830f7b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/EletricalAgeBlueTable_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TestArt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Javafx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/fxml/MainScreen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/fxml/bluetable/worktable.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/fxml/simView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/fxml/windowBasicToolBox.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/image/blueprint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/image/bluetable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/image/greentable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/image/icons8_close_96px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/image/icons8_maximize_button_96px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/image/icons8_restore_down_96px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/image/icons8_subtract_96px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/image/redtable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/styles/colors.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/styles/menuColor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/assets/styles/menuToolBar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/core/controllers/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/core/controllers/WindowBasicsFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/core/launcher/BlueTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/core/launcher/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kuse/core/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kuse/core/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resorces/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Build_eln_runnable.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/de_jensd_fontawesomefx_emojione.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/de_jensd_fontawesomefx_materialicons.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EletricalAgeBlueTable.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EletricalAgeBlueTable.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElnBluetable.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javafx-sdk-19/legal/javafx.graphics/mesa3d.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/javafx-sdk-19/legal/javafx.graphics/mesa3d.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/MainScreen.fxml" afterDir="false" />
+    <list default="true" id="fcfc8648-f1eb-4f51-a4df-32c233830f7b" name="Changes" comment="change the zoom code, and modify the windows move screen to only the menuTollBar">
+      <change afterPath="$PROJECT_DIR$/src/production/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Javafx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Javafx.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/EletricalAgeBlueTable_jar/EletricalAgeBlueTable.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/EletricalAgeBlueTable_jar/EletricalAgeBlueTable.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TestArt/EletricalAgeBlueTable.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TestArt/EletricalAgeBlueTable.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/bluetable/worktable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/bluetable/worktable.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/bluetable/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/core/controllers/WindowBasicsFunction$ResizeListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/core/controllers/WindowBasicsFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/core/launcher/BlueTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/core/launcher/Launcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fxml/MainScreen.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fxml/bluetable/worktable.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fxml/simView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fxml/windowBasicToolBox.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/image/blueprint.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/image/bluetable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/image/greentable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/image/icons8_close_96px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/image/icons8_maximize_button_96px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/image/icons8_restore_down_96px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/image/icons8_subtract_96px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/image/redtable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/colors.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/menuColor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/menuToolBar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/bluetable/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/core/controllers/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/core/controllers/WindowBasicsFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/core/launcher/BlueTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/core/launcher/Launcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/core/controllers/WindowBasicsFunction$ResizeListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/core/controllers/WindowBasicsFunction$ResizeListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/core/controllers/WindowBasicsFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/core/controllers/WindowBasicsFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/core/launcher/BlueTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/core/launcher/BlueTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/EletricalAgeBlueTable/kuse/core/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/EletricalAgeBlueTable/kuse/core/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/assets/fxml/bluetable/worktable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/assets/fxml/bluetable/worktable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/core/controllers/WindowBasicsFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/core/controllers/WindowBasicsFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/core/launcher/BlueTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/core/launcher/BlueTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kuse/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kuse/core/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,13 +55,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/welbre/Desktop/EletricalAgeBlueTable/out/artifacts/TestArt/EletricalAgeBlueTable.jar",
-    "project.structure.last.edited": "Artifacts",
+    "last_opened_file_path": "C:/Users/welbre/Desktop/EletricalAgeBlueTable/lib/javafx-sdk-19/doc/script-dir",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.20344828"
   }
 }]]></component>
-  <component name="RunManager" selected="JAR Application.Test">
+  <component name="RunManager" selected="JAR Application.Run">
     <configuration name="Run" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/EletricalAgeBlueTable_jar/EletricalAgeBlueTable.jar" />
       <option name="WORKING_DIRECTORY" value="C:\Users\welbre\Desktop\EletricalAgeBlueTable" />
@@ -144,17 +98,37 @@
       <option name="presentableId" value="Default" />
       <updated>1672057846710</updated>
     </task>
+    <task id="LOCAL-00001" summary="modify default project package to kuse&#10;add a test class and module">
+      <created>1672088771239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672088771239</updated>
+    </task>
+    <task id="LOCAL-00002" summary="modify default project package to kuse&#10;add a test class and module">
+      <created>1672088810831</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672088810831</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/kuse/core/Main.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modify default project package to kuse&#10;add a test class and module" />
+    <MESSAGE value="change the zoom code, and modify the windows move screen to only the menuTollBar" />
+    <option name="LAST_COMMIT_MESSAGE" value="change the zoom code, and modify the windows move screen to only the menuTollBar" />
   </component>
 </project>
