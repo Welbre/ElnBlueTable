@@ -1,13 +1,12 @@
 package kuse.core.controllers;
 
-import kuse.bluetable.Controller;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuBar;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
+import kuse.bluetable.Worktable;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,8 +20,7 @@ public class MainController implements Initializable {
     public TabPane simViewer;
     public MenuBar mainMenuBar;
     public AnchorPane toolBox;
-
-    public Controller worktableController;
+    public SplitPane mainSplitPane;
 
     public void mainBarSimViewerBuilder(Event e){
         Menu viewMenu = mainMenuBar.getMenus().get(2);
@@ -48,5 +46,6 @@ public class MainController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         MAIN_CONTROLLER = this;
+        ((Pane) mainSplitPane.getItems().get(1)).getChildren().add(Worktable.table);
     }
 }
