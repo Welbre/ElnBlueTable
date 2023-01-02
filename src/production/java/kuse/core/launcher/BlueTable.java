@@ -1,5 +1,7 @@
 package kuse.core.launcher;
 
+import kuse.core.controllers.MainController;
+import kuse.core.controllers.WindowBasicsFunction;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,8 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import kuse.core.controllers.MainController;
-import kuse.core.controllers.WindowBasicsFunction;
 
 import java.io.IOException;
 

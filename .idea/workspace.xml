@@ -10,10 +10,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcfc8648-f1eb-4f51-a4df-32c233830f7b" name="Changes" comment="Now the bluetable isn't a fxml file, the Worktable.java is now the class that create and handle all code below workTable.&#10;&#10;Create a basic contextMenu, using the ContextMenu.java class, it's working and using the menu.css file how styleClass, but the menu aren't created in current spot.&#10;&#10;Created a basic Wire tool, in Wire.java class, now we are able to create basics wire, the tool and the wire is currently in the same file, but the tool will be moved to another file.&#10;&#10;Basic OOP class and interfaces creates, created a Component.java to represent any electrical component, and a container to put and register all components creates in some screen.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/assets/image/icons/icons8_list_view_96px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/ContextMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Worktable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/ComponentContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/ITool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/Wire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/EletricalAgeBlueTable_jar/EletricalAgeBlueTable.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Javafx/javafx-swt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Javafx/javafx.base.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Javafx/javafx.controls.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Javafx/javafx.fxml.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Javafx/javafx.graphics.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Javafx/javafx.media.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Javafx/javafx.swing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Javafx/javafx.web.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TestArt/EletricalAgeBlueTable.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/MainScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/bluetable/worktable.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/image/blueprint.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/image/blueprint.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/styles/menuColor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/styles/menuToolBar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/core/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/core/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/EletricalAgeBlueTable/kuse/core/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/EletricalAgeBlueTable/kuse/core/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/assets/fxml/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/assets/fxml/MainScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/assets/fxml/bluetable/worktable.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/production/assets/fxml/simView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/assets/fxml/simView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/production/assets/fxml/windowBasicToolBox.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/assets/fxml/windowBasicToolBox.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/assets/image/blueprint.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/assets/image/blueprint.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/assets/styles/menuColor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/assets/styles/back.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/assets/styles/menuToolBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/assets/styles/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/core/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/core/controllers/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/production/java/kuse/core/controllers/WindowBasicsFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/core/controllers/WindowBasicsFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/production/java/kuse/core/launcher/BlueTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/core/launcher/BlueTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kuse/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kuse/core/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,14 +159,7 @@
       <option name="project" value="LOCAL" />
       <updated>1672100253082</updated>
     </task>
-    <task id="LOCAL-00004" summary="Now the bluetable isn't a fxml file, the Worktable.java is now the class that create and handle all code below workTable.&#10;&#10;Create a basic contextMenu, using the ContextMenu.java class, it's working and using the menu.css file how styleClass, but the menu aren't created in current spot.&#10;&#10;Created a basic Wire tool, in Wire.java class, now we are able to create basics wire, the tool and the wire is currently in the same file, but the tool will be moved to another file.&#10;&#10;Basic OOP class and interfaces creates, created a Component.java to represent any electrical component, and a container to put and register all components creates in some screen.">
-      <created>1672682654849</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1672682654849</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
