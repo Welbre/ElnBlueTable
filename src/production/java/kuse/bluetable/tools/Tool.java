@@ -24,8 +24,7 @@ public interface Tool {
             dot = dot1;
         }
     }
-
-    void activate();
+     void activate();
 
     void deactivate();
 

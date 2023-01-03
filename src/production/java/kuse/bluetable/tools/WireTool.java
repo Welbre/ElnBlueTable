@@ -10,7 +10,7 @@ import kuse.bluetable.component.Wire;
 public class WireTool implements Tool {
 
     private static double[] WIRE_CREATOR_HELPER;
-    public static final ImageCursor icon = Tool.mergeDotInImageCursor("/assets/image/wireTool.png");
+    public static final ImageCursor icon = Tool.mergeDotInImageCursor("/assets/image/tools/wire.png");
 
     private static final EventHandler<MouseEvent> mouseEvent = h-> {
         if (h.getButton().equals(MouseButton.PRIMARY)){

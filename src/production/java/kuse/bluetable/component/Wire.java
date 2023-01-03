@@ -7,7 +7,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.Shape;
 import kuse.bluetable.tools.WireTool;
 
-public class Wire extends Component{
+public class Wire extends ResizableComponent{
 
     public static final WireTool WIRE_TOOL= new WireTool();
 
@@ -15,37 +15,27 @@ public class Wire extends Component{
     public static final Color POINT_COLOR = Color.RED;
     public static final int DEFAULT_LINE_WIDTH = 2;
 
-    private final Shape[] shapes;
-    private final double[] ini;
-    private final double[] fin;
-
     public Wire(Pane where ,double x0, double y0, double x1, double y1) {
-        this.ini = new double[]{x0, y0};
-        this.fin = new double[]{x1, y1};
-
-        shapes = draw(where);
+        super(where, x0, y0, x1, y1);
     }
 
-    private Shape[] draw(Pane pane){
+    @Override
+     public Shape[] initShapes(){
         int half = DEFAULT_LEN / 2;
 
-        Rectangle rec0 = new Rectangle(this.ini[0] - half, this.ini[1] - half, DEFAULT_LEN, DEFAULT_LEN);
+        Rectangle rec0 = new Rectangle(getX() - half, getY() - half, DEFAULT_LEN, DEFAULT_LEN);
         rec0.setFill(POINT_COLOR);
 
-        Rectangle rec1 = new Rectangle(this.fin[0] - half, this.fin[1] - half, DEFAULT_LEN, DEFAULT_LEN);
+        Rectangle rec1 = new Rectangle(getX1() - half, getY1() - half, DEFAULT_LEN, DEFAULT_LEN);
         rec1.setFill(POINT_COLOR);
 
-        Line line = new Line(this.ini[0], this.ini[1], this.fin[0], this.fin[1]);
+        Line line = new Line(getX(), getY(), getX1(), getY1());
         line.setStrokeWidth(DEFAULT_LINE_WIDTH);
 
-        Shape[] shapes = {
+        return new Shape[]{
                 rec0,
                 rec1,
                 line
         };
-
-        pane.getChildren().addAll(shapes);
-
-        return shapes;
     }
 }

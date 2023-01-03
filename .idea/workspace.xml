@@ -9,29 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcfc8648-f1eb-4f51-a4df-32c233830f7b" name="Changes" comment="Some changes in imports and clean code.">
-      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/Tool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/WireTool.java" afterDir="false" />
+    <list default="true" id="fcfc8648-f1eb-4f51-a4df-32c233830f7b" name="Changes" comment="i forgot to add the new png files, :)">
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ResizableComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Source.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/SourceTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/EletricalAgeBlueTable_jar/EletricalAgeBlueTable.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/EletricalAgeBlueTable_jar/EletricalAgeBlueTable.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/MainScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/simView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/simView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/windowBasicToolBox.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/assets/fxml/windowBasicToolBox.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/ContextMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/ContextMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/Worktable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/Worktable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/tools/Component.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/tools/ComponentContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/tools/ITool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/tools/Wire.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/core/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/core/controllers/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/EletricalAgeBlueTable/kuse/core/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/EletricalAgeBlueTable/kuse/core/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/component/Component.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/component/Component.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/component/Wire.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/component/Wire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/tools/WireTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/tools/WireTool.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/ContextMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/ContextMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Worktable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Worktable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/ComponentContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ComponentContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/ITool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/Wire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Wire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Wire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Wire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/Tool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/WireTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/WireTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +35,8 @@
       <list>
         <option value="module-info" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -149,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672682830370</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed the context menu position.&#10;&#10;Split the wire component and wire tool from Wire.java.&#10;&#10;Add a basic oop classes and interfaces to create tools.&#10;&#10;Add a image editor to put a dot in all mouse icons tools.">
+      <created>1672751054837</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672751054837</updated>
+    </task>
+    <task id="LOCAL-00006" summary="i forgot to add the new png files, :)">
+      <created>1672751090424</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672751090424</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +174,8 @@
     <MESSAGE value="change the zoom code, and modify the windows move screen to only the menuTollBar" />
     <MESSAGE value="Now the bluetable isn't a fxml file, the Worktable.java is now the class that create and handle all code below workTable.&#10;&#10;Create a basic contextMenu, using the ContextMenu.java class, it's working and using the menu.css file how styleClass, but the menu aren't created in current spot.&#10;&#10;Created a basic Wire tool, in Wire.java class, now we are able to create basics wire, the tool and the wire is currently in the same file, but the tool will be moved to another file.&#10;&#10;Basic OOP class and interfaces creates, created a Component.java to represent any electrical component, and a container to put and register all components creates in some screen." />
     <MESSAGE value="Some changes in imports and clean code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes in imports and clean code." />
+    <MESSAGE value="Fixed the context menu position.&#10;&#10;Split the wire component and wire tool from Wire.java.&#10;&#10;Add a basic oop classes and interfaces to create tools.&#10;&#10;Add a image editor to put a dot in all mouse icons tools." />
+    <MESSAGE value="i forgot to add the new png files, :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="i forgot to add the new png files, :)" />
   </component>
 </project>
