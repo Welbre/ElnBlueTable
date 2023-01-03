@@ -4,7 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.ImageView;
-import kuse.bluetable.tools.Wire;
+import kuse.bluetable.component.Wire;
+import kuse.bluetable.tools.Tool;
 
 public class ContextMenu extends javafx.scene.control.ContextMenu {
 
@@ -41,6 +42,10 @@ public class ContextMenu extends javafx.scene.control.ContextMenu {
     }
 
     private static void handle(ActionEvent e) {
-        Wire.onUseIt(Worktable.table);
+        Tool tool = Worktable.table.getSelectedTool();
+        if (tool != Wire.WIRE_TOOL)
+            Worktable.table.setSelectedTool(Wire.WIRE_TOOL);
+        else
+            Worktable.table.setSelectedTool(null);
     }
 }

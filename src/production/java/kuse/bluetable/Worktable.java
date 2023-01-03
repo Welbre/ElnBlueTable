@@ -1,5 +1,6 @@
 package kuse.bluetable;
 
+import javafx.scene.Cursor;
 import javafx.scene.Node;
 import javafx.scene.input.ContextMenuEvent;
 import javafx.scene.input.MouseButton;
@@ -8,8 +9,9 @@ import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import kuse.bluetable.tools.Component;
-import kuse.bluetable.tools.ComponentContainer;
+import kuse.bluetable.component.Component;
+import kuse.bluetable.component.ComponentContainer;
+import kuse.bluetable.tools.Tool;
 
 import java.util.List;
 
@@ -21,10 +23,11 @@ public class Worktable extends AnchorPane implements ComponentContainer {
 
     private double xInitial, yInitial = 0;
 
-    private final ContextMenu contextMenu;
+    private final ContextMenu contextMenu = new ContextMenu();
+
+    private Tool selectedTool = null;
 
     protected Worktable() {
-        this.contextMenu = new ContextMenu();
         this.setPrefSize(1920,1400);
         this.setStyle("-fx-background-image: url(/assets/image/blueprint.png)");
 
@@ -46,6 +49,8 @@ public class Worktable extends AnchorPane implements ComponentContainer {
             xInitial = event.getX();
             yInitial = event.getY();
         }
+
+        contextMenu.hide();
     }
     private void onMouseDragged(MouseEvent event){
         if (event.getButton().equals(MouseButton.PRIMARY)) {
@@ -59,7 +64,7 @@ public class Worktable extends AnchorPane implements ComponentContainer {
         if (contextMenu.isShowing())
             contextMenu.hide();
 
-        contextMenu.show((Node) event.getSource(), event.getX(), event.getY());
+        contextMenu.show((Node) event.getSource(), event.getSceneX(), event.getSceneY());
     }
 
     private void onScroll(ScrollEvent e){
@@ -78,5 +83,25 @@ public class Worktable extends AnchorPane implements ComponentContainer {
 
         table.setScaleX(table.zoomAmount);
         table.setScaleY(table.zoomAmount);
+    }
+
+    public Tool getSelectedTool() {
+        return selectedTool;
+    }
+
+    public void setSelectedTool(Tool selectedTool) {
+        if (selectedTool == null){
+            this.selectedTool = null;
+            this.setCursor(Cursor.DEFAULT);
+            return;
+        } else {
+            this.setCursor(selectedTool.getImageCursor());
+            selectedTool.activate();
+        }
+
+        if (this.selectedTool != null)
+            this.selectedTool.deactivate();
+
+        this.selectedTool = selectedTool;
     }
 }
