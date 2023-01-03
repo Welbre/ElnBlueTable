@@ -1,9 +1,0 @@
-.root {
-	backgroundDark: #21252BFF;
-	background: #282C34FF;
-	backgroundLight: #282C34FF;
-	backgroundSuperLight: #313236;
-	
-	textBase: #ffffff;
-	fadedBackground: derive(background, 70%);
-}
