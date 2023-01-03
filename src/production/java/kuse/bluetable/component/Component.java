@@ -3,9 +3,10 @@ package kuse.bluetable.component;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Shape;
 
-public abstract class Component {
-    public static final int GRID_GAP = 50;
+import static kuse.bluetable.component.ComponentGrid.GRID_GAP;
+import static kuse.bluetable.component.ComponentGrid.convertToGrid;
 
+public abstract class Component {
     protected Shape[] shapes;
     private final int x;
     private final int y;
@@ -18,14 +19,15 @@ public abstract class Component {
         }
     }
 
-    protected Component(Pane pane, double x, double y) {
+    protected Component(ComponentGrid grid, double x, double y) {
         {
             int[] gridPos = convertToGrid(x, y);
             this.x = gridPos[0];
             this.y = gridPos[1];
         }
         this.shapes = initShapes();
-        draw(pane);
+        grid.addComponent(this);
+        draw(grid);
     }
 
     abstract Shape[] initShapes();
@@ -33,15 +35,6 @@ public abstract class Component {
     protected void draw(Pane pane){
         pane.getChildren().addAll(shapes);
     }
-
-    protected static int[] convertToGrid(double x, double y){
-        return new int[]{
-                (x % GRID_GAP) > GRID_GAP / 2f ? (int) (x/GRID_GAP) + 1 : (int) (x/GRID_GAP)
-                ,
-                (y % GRID_GAP) > GRID_GAP / 2f ? (int) (y/GRID_GAP) + 1 : (int) (y/GRID_GAP)
-        };
-    }
-
 
     //gets and setts
     public Shape[] getShapes() {

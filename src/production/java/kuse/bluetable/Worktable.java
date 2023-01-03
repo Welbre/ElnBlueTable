@@ -9,22 +9,17 @@ import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import kuse.bluetable.component.Component;
-import kuse.bluetable.component.ComponentContainer;
+import kuse.bluetable.component.ComponentGrid;
 import kuse.bluetable.tools.Tool;
 
-import java.util.List;
 
-public class Worktable extends AnchorPane implements ComponentContainer {
+public class Worktable extends ComponentGrid {
 
     public static final Worktable table = new Worktable();
 
     public double zoomAmount = 1;
-
     private double xInitial, yInitial = 0;
-
     private final ContextMenu contextMenu = new ContextMenu();
-
     private Tool selectedTool = null;
 
     protected Worktable() {
@@ -37,11 +32,6 @@ public class Worktable extends AnchorPane implements ComponentContainer {
         setOnMouseDragged(this::onMouseDragged);
         setOnContextMenuRequested(this::onContextMenuRequested);
         setOnScroll(this::onScroll);
-    }
-
-    @Override
-    public List<Component> getComponents() {
-        return null;
     }
 
     private void onMousePressed(MouseEvent event){

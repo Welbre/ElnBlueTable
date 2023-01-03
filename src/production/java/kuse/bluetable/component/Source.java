@@ -1,6 +1,5 @@
 package kuse.bluetable.component;
 
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Shape;
@@ -13,7 +12,7 @@ public class Source extends Component {
     //todo test
     public double voltage = 10;
 
-    public Source(Pane where, double x, double y) {
+    public Source(ComponentGrid where, double x, double y) {
         super(where, x, y);
     }
 

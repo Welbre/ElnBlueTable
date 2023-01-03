@@ -1,6 +1,5 @@
 package kuse.core.controllers;
 
-import kuse.core.launcher.BlueTable;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.event.EventType;
@@ -14,6 +13,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import kuse.core.launcher.BlueTable;
 
 public class WindowBasicsFunction {
 

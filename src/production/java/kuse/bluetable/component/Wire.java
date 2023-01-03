@@ -1,6 +1,5 @@
 package kuse.bluetable.component;
 
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
@@ -15,8 +14,8 @@ public class Wire extends ResizableComponent{
     public static final Color POINT_COLOR = Color.RED;
     public static final int DEFAULT_LINE_WIDTH = 2;
 
-    public Wire(Pane where ,double x0, double y0, double x1, double y1) {
-        super(where, x0, y0, x1, y1);
+    public Wire(ComponentGrid grid ,double x0, double y0, double x1, double y1) {
+        super(grid, x0, y0, x1, y1);
     }
 
     @Override

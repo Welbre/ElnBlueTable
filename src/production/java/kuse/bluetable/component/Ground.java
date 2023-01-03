@@ -4,7 +4,6 @@ import javafx.event.EventHandler;
 import javafx.scene.ImageCursor;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Shape;
@@ -37,7 +36,7 @@ public class Ground extends Source {
         }
     };
 
-    public Ground(Pane where, double x, double y) {
+    public Ground(ComponentGrid where, double x, double y) {
         super(where, x, y);
 
         voltage = 0;

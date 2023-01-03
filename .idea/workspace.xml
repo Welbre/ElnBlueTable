@@ -9,15 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcfc8648-f1eb-4f51-a4df-32c233830f7b" name="Changes" comment="IDE files now are ignored.">
-      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Ground.java" afterDir="false" />
+    <list default="true" id="fcfc8648-f1eb-4f51-a4df-32c233830f7b" name="Changes" comment="New basic ground, like a Source.java, but with 0V.&#10;&#10;Source.java now can be able to put voltage, 10v defined as default.">
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ComponentGrid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/ContextMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/ContextMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/assets/fxml/simView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/assets/fxml/simView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/assets/fxml/windowBasicToolBox.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/assets/fxml/windowBasicToolBox.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Worktable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Worktable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ComponentContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ComponentContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Ground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Ground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ResizableComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ResizableComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Source.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/SourceTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/SourceTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/Tool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/WireTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/WireTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Wire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Wire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/core/controllers/WindowBasicsFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/core/controllers/WindowBasicsFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/core/launcher/BlueTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/core/launcher/BlueTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +40,37 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="basicCircuit" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -177,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672757602526</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="New basic ground, like a Source.java, but with 0V.&#10;&#10;Source.java now can be able to put voltage, 10v defined as default.">
+      <created>1672758521907</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672758521907</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +234,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="basicCircuit" />
                       </list>
                     </value>
                   </entry>
@@ -214,6 +257,22 @@
     <MESSAGE value="Git ignore created." />
     <MESSAGE value="Fix bugs.&#10;&#10;Now the setSelectedTool work current with you set the tool to null.&#10;&#10;The left click remove the selected tool and don't show the context menu." />
     <MESSAGE value="IDE files now are ignored." />
-    <option name="LAST_COMMIT_MESSAGE" value="IDE files now are ignored." />
+    <MESSAGE value="New basic ground, like a Source.java, but with 0V.&#10;&#10;Source.java now can be able to put voltage, 10v defined as default." />
+    <option name="LAST_COMMIT_MESSAGE" value="New basic ground, like a Source.java, but with 0V.&#10;&#10;Source.java now can be able to put voltage, 10v defined as default." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ComponentContainer.java</url>
+          <line>7</line>
+          <properties class="kuse.bluetable.component.ComponentContainer" method="addComponent">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
