@@ -61,6 +61,12 @@ public class Worktable extends AnchorPane implements ComponentContainer {
     }
 
     private void onContextMenuRequested(ContextMenuEvent event){
+        if (selectedTool != null) {
+            setSelectedTool(null);
+            contextMenu.hide();
+            return;
+        }
+
         if (contextMenu.isShowing())
             contextMenu.hide();
 
@@ -90,18 +96,14 @@ public class Worktable extends AnchorPane implements ComponentContainer {
     }
 
     public void setSelectedTool(Tool selectedTool) {
+        this.selectedTool.deactivate();
+        this.selectedTool = selectedTool;
+
         if (selectedTool == null){
-            this.selectedTool = null;
             this.setCursor(Cursor.DEFAULT);
-            return;
         } else {
             this.setCursor(selectedTool.getImageCursor());
             selectedTool.activate();
         }
-
-        if (this.selectedTool != null)
-            this.selectedTool.deactivate();
-
-        this.selectedTool = selectedTool;
     }
 }

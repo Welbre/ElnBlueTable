@@ -9,21 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcfc8648-f1eb-4f51-a4df-32c233830f7b" name="Changes" comment="i forgot to add the new png files, :)">
-      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ResizableComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Source.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/SourceTool.java" afterDir="false" />
+    <list default="true" id="fcfc8648-f1eb-4f51-a4df-32c233830f7b" name="Changes" comment="Git ignore created.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/EletricalAgeBlueTable_jar/EletricalAgeBlueTable.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/EletricalAgeBlueTable_jar/EletricalAgeBlueTable.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/ContextMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/ContextMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/component/Component.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/component/Component.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/component/Wire.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/component/Wire.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/tools/WireTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EletricalAgeBlueTable/kuse/bluetable/tools/WireTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/ContextMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/ContextMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Wire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Wire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/Tool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/WireTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/WireTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Worktable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Worktable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/SourceTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/tools/SourceTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672751090424</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create a ResizableComponent.java to create Component that can be resizable or needs 2 vectors to create;&#10;&#10;Component.java initShapes in a different method, and the method that draw the shapes in parent screen was split in another method.&#10;&#10;Component.java now use grid values to create and set new Components.&#10;&#10;Component.java constructor now define the Component location before draw that">
+      <created>1672756584012</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672756584012</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Git ignore created.">
+      <created>1672756798847</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672756798847</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,7 +166,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -176,6 +191,8 @@
     <MESSAGE value="Some changes in imports and clean code." />
     <MESSAGE value="Fixed the context menu position.&#10;&#10;Split the wire component and wire tool from Wire.java.&#10;&#10;Add a basic oop classes and interfaces to create tools.&#10;&#10;Add a image editor to put a dot in all mouse icons tools." />
     <MESSAGE value="i forgot to add the new png files, :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="i forgot to add the new png files, :)" />
+    <MESSAGE value="Create a ResizableComponent.java to create Component that can be resizable or needs 2 vectors to create;&#10;&#10;Component.java initShapes in a different method, and the method that draw the shapes in parent screen was split in another method.&#10;&#10;Component.java now use grid values to create and set new Components.&#10;&#10;Component.java constructor now define the Component location before draw that" />
+    <MESSAGE value="Git ignore created." />
+    <option name="LAST_COMMIT_MESSAGE" value="Git ignore created." />
   </component>
 </project>

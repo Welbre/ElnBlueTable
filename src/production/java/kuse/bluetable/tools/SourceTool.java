@@ -2,6 +2,7 @@ package kuse.bluetable.tools;
 
 import javafx.event.EventHandler;
 import javafx.scene.ImageCursor;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import kuse.bluetable.Worktable;
 import kuse.bluetable.component.Source;
@@ -11,7 +12,8 @@ public class SourceTool implements Tool {
 
     private static final ImageCursor icon = Tool.mergeDotInImageCursor("/assets/image/tools/source.png");
     public static final EventHandler<MouseEvent> mouseEvent = e -> {
-        new Source(Worktable.table ,e.getX(), e.getY());
+        if (e.getButton().equals(MouseButton.PRIMARY))
+            new Source(Worktable.table ,e.getX(), e.getY());
     };
 
     @Override
