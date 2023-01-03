@@ -30,11 +30,11 @@ public interface Tool {
 
     ImageCursor getImageCursor();
 
-     static ImageCursor mergeDotInImageCursor(String imagePath){
+     static ImageCursor mergeDotInImageCursor(String imageName){
         BufferedImage image;
 
         try {
-            image = ImageIO.read(Objects.requireNonNull(Tool.class.getResource(imagePath)));
+            image = ImageIO.read(Objects.requireNonNull(Tool.class.getResource("/assets/image/tools/" + imageName)));
         } catch (Exception ignored){
             return null;
         }

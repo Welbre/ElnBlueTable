@@ -10,7 +10,7 @@ import kuse.bluetable.component.Source;
 
 public class SourceTool implements Tool {
 
-    private static final ImageCursor icon = Tool.mergeDotInImageCursor("/assets/image/tools/source.png");
+    private static final ImageCursor icon = Tool.mergeDotInImageCursor("source.png");
     public static final EventHandler<MouseEvent> mouseEvent = e -> {
         if (e.getButton().equals(MouseButton.PRIMARY))
             new Source(Worktable.table ,e.getX(), e.getY());

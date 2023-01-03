@@ -10,6 +10,9 @@ public class Source extends Component {
 
     public static final SourceTool SOURCE_TOOL = new SourceTool();
 
+    //todo test
+    public double voltage = 10;
+
     public Source(Pane where, double x, double y) {
         super(where, x, y);
     }

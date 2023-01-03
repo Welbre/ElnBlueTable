@@ -96,7 +96,9 @@ public class Worktable extends AnchorPane implements ComponentContainer {
     }
 
     public void setSelectedTool(Tool selectedTool) {
-        this.selectedTool.deactivate();
+        if (this.selectedTool != null)
+            this.selectedTool.deactivate();
+
         this.selectedTool = selectedTool;
 
         if (selectedTool == null){

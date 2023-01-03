@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.ImageView;
+import kuse.bluetable.component.Ground;
 import kuse.bluetable.component.Source;
 import kuse.bluetable.component.Wire;
 import kuse.bluetable.tools.Tool;
@@ -13,8 +14,9 @@ public class ContextMenu extends javafx.scene.control.ContextMenu {
     private static final MenuItem wire;
 
     private static final MenuItem source;
-    private static final Menu resistor;
+    private static final MenuItem ground;
 
+    private static final Menu resistor;
     private static final MenuItem resistor_static;
     private static final MenuItem resistor_dynamic;
 
@@ -27,6 +29,11 @@ public class ContextMenu extends javafx.scene.control.ContextMenu {
         {
             source = new MenuItem("source");
             source.setOnAction(e -> ContextMenu.handle(e, Source.SOURCE_TOOL));
+        }
+
+        {
+            ground = new MenuItem("Ground");
+            ground.setOnAction(e -> ContextMenu.handle(e, Ground.GROUND_TOOL));
         }
 
         resistor_dynamic = new MenuItem("Dynamic");
@@ -42,7 +49,7 @@ public class ContextMenu extends javafx.scene.control.ContextMenu {
     }
 
     public ContextMenu() {
-        this.getItems().addAll(wire, source, resistor);
+        this.getItems().addAll(wire, source, ground, resistor);
     }
 
     private static void handle(ActionEvent e, Tool tool) {
