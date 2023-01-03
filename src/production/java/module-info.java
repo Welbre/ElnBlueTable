@@ -4,4 +4,6 @@ module EletricalAgeBlueTable {
     requires javafx.controls;
     requires java.desktop;
     requires javafx.swing;
+    requires kotlin.stdlib;
+    requires commons.math3;
 }
