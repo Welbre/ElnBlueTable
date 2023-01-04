@@ -8,6 +8,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Shape;
 import kuse.bluetable.Worktable;
+import kuse.bluetable.component.grid.ComponentGrid;
 import kuse.bluetable.tools.Tool;
 
 public class Ground extends Source {
@@ -37,15 +38,13 @@ public class Ground extends Source {
     };
 
     public Ground(ComponentGrid where, double x, double y) {
-        super(where, x, y);
-
-        voltage = 0;
+        super(where, x, y,0);
     }
 
     @Override
     public Shape[] initShapes() {
         return new Shape[]{
-                new Circle(getX(), getY(), 20, Color.GREEN)
+                new Circle(getPins()[0].x, getPins()[0].y, 20, Color.GREEN)
         };
     }
 }

@@ -9,7 +9,7 @@ import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import kuse.bluetable.component.ComponentGrid;
+import kuse.bluetable.component.grid.ComponentGrid;
 import kuse.bluetable.tools.Tool;
 
 

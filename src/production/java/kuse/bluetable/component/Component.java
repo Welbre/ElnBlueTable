@@ -1,59 +1,39 @@
 package kuse.bluetable.component;
 
-import javafx.scene.layout.Pane;
 import javafx.scene.shape.Shape;
+import kuse.bluetable.component.grid.ComponentGrid;
+import kuse.bluetable.component.grid.GridPin;
 
-import static kuse.bluetable.component.ComponentGrid.GRID_GAP;
-import static kuse.bluetable.component.ComponentGrid.convertToGrid;
+import java.util.Arrays;
 
-public abstract class Component {
+public abstract class Component implements Drawable {
     protected Shape[] shapes;
-    private final int x;
-    private final int y;
 
-    protected Component(double x, double y){
-        {
-            int[] gridPos = convertToGrid(x, y);
-            this.x = gridPos[0];
-            this.y = gridPos[1];
-        }
+    private final GridPin[] pin;
+
+    protected Component(int pinAmount){
+        pin = new GridPin[pinAmount];
     }
 
     protected Component(ComponentGrid grid, double x, double y) {
-        {
-            int[] gridPos = convertToGrid(x, y);
-            this.x = gridPos[0];
-            this.y = gridPos[1];
-        }
-        this.shapes = initShapes();
-        grid.addComponent(this);
+        pin = new GridPin[]{GridPin.pinFactory(grid, x, y)};
+
         draw(grid);
     }
 
-    abstract Shape[] initShapes();
+    public GridPin[] getPins(){
+        return pin;
+    };
+    public abstract mods.eln.sim.mna.component.Component getElectricalComponent();
 
-    protected void draw(Pane pane){
-        pane.getChildren().addAll(shapes);
+    protected void draw(ComponentGrid grid){
+        this.shapes = initShapes();
+        grid.addComponent(this);
+        grid.getChildren().addAll(shapes);
+        Arrays.stream(getPins()).forEach(h -> grid.getChildren().addAll(h.initShapes()));
     }
-
     //gets and setts
     public Shape[] getShapes() {
         return shapes;
-    }
-
-    public int getGridX(){
-        return x;
-    }
-
-    public int getGridY(){
-        return y;
-    }
-
-    public int getX() {
-        return x * GRID_GAP;
-    }
-
-    public int getY() {
-        return y * GRID_GAP;
     }
 }

@@ -2,99 +2,34 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="TestArt" />
+      <artifact name="EletricalAgeBlueTable:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcfc8648-f1eb-4f51-a4df-32c233830f7b" name="Changes" comment="Created ComponentGrid.java to handle all Component.java connections.&#10;&#10;some changes in Worktable.java, how this extends a Component ComponentGrid.java, and ComponentGrid is a ComponentContainer.java.">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TestArt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/TestArt.xml" afterDir="false" />
+    <list default="true" id="fcfc8648-f1eb-4f51-a4df-32c233830f7b" name="Changes" comment="Changes about how Grid ,Components, and GridPin interact itself. &#10;&#10;Modify the Component.java to accept multi GridPin.java, now the GridPin is array, and is abstracted to give the first element.&#10;&#10;Add BiPinComponent.java, is the same that Component.java, but the array can be accessed to get the first or second pin. &#10;&#10;Modify the cable to work with new Components class;">
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Drawable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/grid/BiPinComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/grid/ComponentContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/grid/ComponentGrid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/grid/GridPin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/grid/GridTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/grid/MultiPinComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kuse/bluetable/component/grid/GridTreeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EletricalAgeBlueTable.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EletricalAgeBlueTable.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/BatteryProcess.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/BatterySlowProcess.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/DiodeProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/ElectricalConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/ElectricalLoad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/ElectricalResistorHeatThermalLoad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/ElectricalStackMachineProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/FurnaceProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/IProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/ITimeRemoverObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/MonsterPopFreeProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/NodeElectricalGateInputHysteresisProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/NodeVoltageState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/PhysicalConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/RegulatorFurnaceProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/RegulatorProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/RegulatorThermalLoadToElectricalResistor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/ResistorProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/SignalRp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/Simulator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/TemperatureWatchdogDescriptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/ThermalConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/ThermalLoad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/ThermalLoadInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/ThermalLoadInitializerByPowerDrop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/ThermalResistor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/TimeRemover.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/CurrentSourceTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/RootSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/SubSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/Bipole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/Capacitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/Component.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/CurrentSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/Delay.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/IAbstractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/Inductor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/InterSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/InterSystemAbstraction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/Line.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/Monopole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/PowerSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/Resistor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/ResistorSwitch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/Transformer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/component/VoltageSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/misc/IDestructor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/misc/IRootSystemPreStepProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/misc/ISubSystemProcessFlush.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/misc/ISubSystemProcessI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/misc/MnaConst.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/process/PowerSourceBipole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/process/TransformerInterSystemProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/state/CurrentState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/state/State.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/state/VoltageState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/mna/state/VoltageStateLineReady.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/nbt/NbtBatteryProcess.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/nbt/NbtBatterySlowProcess.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/nbt/NbtElectricalGateInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/nbt/NbtElectricalGateInputOutput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/nbt/NbtElectricalGateOutput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/nbt/NbtElectricalGateOutputProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/nbt/NbtElectricalLoad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/nbt/NbtFurnaceProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/nbt/NbtResistor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/nbt/NbtThermalLoad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/destruct/BipoleVoltageWatchdog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/destruct/DelayedDestruction.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/destruct/IDestructable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/destruct/Mechanical.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/destruct/ResistorPowerWatchdog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/destruct/ThermalLoadWatchDog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/destruct/ValueWatchdog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/destruct/VoltageStateWatchDog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/destruct/WorldExplosion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/heater/DiodeHeatThermalLoad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/heater/ElectricalLoadHeatThermalLoad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sim/process/heater/ResistorHeatThermalLoad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/production/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kuse/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kuse/core/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Worktable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/Worktable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ComponentContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ComponentGrid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Ground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Ground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/ResizableComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Source.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Wire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/production/java/kuse/bluetable/component/Wire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/production/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/module-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +43,7 @@
         <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -144,6 +80,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -175,6 +112,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "C:/Users/welbre/Desktop/EletricalAgeBlueTable/lib/Eln/mods/eln/sim/process",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -196,8 +135,30 @@
       <recent name="C:\Users\welbre\Desktop\EletricalAgeBlueTable\lib\Eln\mods\eln\server" />
       <recent name="C:\Users\welbre\Desktop\EletricalAgeBlueTable\lib\Eln\mods\eln\misc" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="kuse.bluetable.component.grid" />
+    </key>
   </component>
   <component name="RunManager" selected="JAR Application.Run">
+    <configuration name="GridTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EletricalAgeBlueTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kuse.bluetable.component.grid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kuse.bluetable.component.grid" />
+      <option name="MAIN_CLASS_NAME" value="kuse.bluetable.component.grid.GridTreeTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/EletricalAgeBlueTable_jar/EletricalAgeBlueTable.jar" />
       <option name="WORKING_DIRECTORY" value="C:\Users\welbre\Desktop\EletricalAgeBlueTable" />
@@ -223,7 +184,13 @@
     <list>
       <item itemvalue="JAR Application.Run" />
       <item itemvalue="JAR Application.Test" />
+      <item itemvalue="JUnit.GridTreeTest" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GridTreeTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -318,7 +285,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672760536153</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add the Eln electrical simulator, refactor this to build without forge and minecraft.">
+      <created>1672787343394</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672787343394</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add the Eln electrical simulator, refactor this to build without forge and minecraft.">
+      <created>1672787398518</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1672787398518</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,6 +338,19 @@
     <MESSAGE value="IDE files now are ignored." />
     <MESSAGE value="New basic ground, like a Source.java, but with 0V.&#10;&#10;Source.java now can be able to put voltage, 10v defined as default." />
     <MESSAGE value="Created ComponentGrid.java to handle all Component.java connections.&#10;&#10;some changes in Worktable.java, how this extends a Component ComponentGrid.java, and ComponentGrid is a ComponentContainer.java." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created ComponentGrid.java to handle all Component.java connections.&#10;&#10;some changes in Worktable.java, how this extends a Component ComponentGrid.java, and ComponentGrid is a ComponentContainer.java." />
+    <MESSAGE value="Add the Eln electrical simulator, refactor this to build without forge and minecraft." />
+    <MESSAGE value="Changes about how Grid ,Components, and GridPin interact itself. &#10;&#10;Modify the Component.java to accept multi GridPin.java, now the GridPin is array, and is abstracted to give the first element.&#10;&#10;Add BiPinComponent.java, is the same that Component.java, but the array can be accessed to get the first or second pin. &#10;&#10;Modify the cable to work with new Components class;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes about how Grid ,Components, and GridPin interact itself. &#10;&#10;Modify the Component.java to accept multi GridPin.java, now the GridPin is array, and is abstracted to give the first element.&#10;&#10;Add BiPinComponent.java, is the same that Component.java, but the array can be accessed to get the first or second pin. &#10;&#10;Modify the cable to work with new Components class;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/production/java/kuse/bluetable/component/grid/GridTree.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
